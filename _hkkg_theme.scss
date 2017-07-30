@@ -1,0 +1,56 @@
+@mixin hkkg_theme() {
+  .hkkg {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .hkkg-caption {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #009ddf;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .hkkg-box1 {
+  }
+
+  .hkkg-t1 {
+    background-color:  #009ddf;
+    color: #fff;
+    font-size: 1.1rem;
+    line-height: 2rem;
+    font-weight: 600;
+    padding: 0.3rem;
+    text-align: center;
+    margin-bottom: 3px;
+
+    &:hover {
+      background-color: lighten(#009ddf, 10%);
+    }
+  }
+
+  .hkkg-box2 {
+  }
+
+  .hkkg-t2 {
+    background-color: #efefef;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 2rem;
+    padding: 0.3rem;
+    margin-top: 2px;
+
+    &:hover {
+      background-color: lighten(#efefef, 10%);
+    }
+  }
+
+  // 收起时显示的下拉箭头
+  .hkkg-shrink-arrow {
+    // border: 0.5rem solid transparent;
+    // border-top-color: #fff;
+    // top: 1.2rem;
+    // right:  0.5rem;
+  }
+}

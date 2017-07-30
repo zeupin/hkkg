@@ -1,0 +1,59 @@
+// reset
+.hkkg {
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  ul,li {
+    list-style-type: none;
+  }
+}
+
+// common
+.hkkg,
+.hkkg-caption,
+.hkkg-box1,
+.hkkg-box2,
+.hkkg-box3,
+.hkkg-t1,
+.hkkg-t2,
+.hkkg-t3 {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  margin: 0 auto 0 auto;
+  padding: 0;
+}
+
+// shrink
+.hkkg-box1.shrink {
+  .hkkg-box2,
+  .hkkg-t2 {
+    display: none;
+  }
+
+  .hkkg-t1:after {
+    @include hkkg_arrow_down();
+  }
+}
+.hkkg-box2.shrink {
+  .hkkg-box3,
+  .hkkg-t3 {
+    display: none;
+  }
+}
+
+// 收起时显示的下拉箭头
+.hkkg-shrink-arrow {
+  border: 0.5rem solid transparent;
+  border-top-color: #fff;
+  width: 0;
+  height: 0;
+  content: "";
+  z-index: 1;
+
+  position: absolute;
+  top: 1.2rem;
+  right:  0.5rem;
+}

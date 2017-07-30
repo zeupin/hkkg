@@ -1,0 +1,12 @@
+// 收起时，显示的下拉箭头符号
+@mixin hkkg_arrow_down($size:0.5rem, $color:#fff, $right:0.5rem, $top: 1.2rem) {
+  border: $size solid transparent;
+  border-top-color: $color;
+  width: 0;
+  height: 0;
+  content: "";
+
+  position: absolute;
+  top: $top;
+  right:  $right;
+}

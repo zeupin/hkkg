@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>边栏菜单</title>
+  <link rel="stylesheet" href="hkkg.css">
+  <script src="jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="wrapper" style="width: 240px;">
+    <div class="hkkg">
+      <div class="hkkg-caption"><a href="/products">产品中心</a></div>
+
+      <div class="hkkg-box1">
+        <div class="hkkg-t1"><a href="/products/domains">域名</a></div>
+
+        <div class="hkkg-t2"><a href="/products/domains/com">.com</a></div>
+        <div class="hkkg-t2"><a href="/products/domains/cn">.cn</a></div>
+      </div>
+
+      <div class="hkkg-box1">
+        <!-- <div class="hkkg-shrink-arrow"></div> -->
+        <div class="hkkg-t1"><a href="/products/hosts">主机</a></div>
+
+        <div class="hkkg-t2"><a href="/products/hosts/beijing">北京机房</a></div>
+        <div class="hkkg-t2"><a href="/products/hosts/xiamen">厦门机房</a></div>
+        <div class="hkkg-t2"><a href="/products/hosts/hongkong">香港主机</a></div>
+        <div class="hkkg-t2"><a href="/products/hosts/oversea">海外主机</a></div>
+      </div>
+
+      <div class="hkkg-box1">
+        <div class="hkkg-t1"><a href="/products/mailbox">企业邮箱</a></div>
+
+        <div class="hkkg-t2"><a href="/products/mailbox/xinnet">新网邮箱</a></div>
+        <div class="hkkg-t2"><a href="/products/mailbox/laoban">老板邮箱</a></div>
+      </div>
+
+      <div class="hkkg-box1 shrink shrinkable">
+        <!-- <div class="hkkg-shrink-arrow"></div> -->
+        <div class="hkkg-t1"><a href="/products/hosts">折起演示</a></div>
+
+        <div class="hkkg-t2"><a href="/products/hosts/beijing">北京机房</a></div>
+      </div>
+      <div class="hkkg-box1 shrink shrinkable">
+        <!-- <div class="hkkg-shrink-arrow"></div> -->
+        <div class="hkkg-t1"><a href="/products/hosts">折起演示</a></div>
+
+        <div class="hkkg-t2"><a href="/products/beijing">北京机房</a></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    $(".hkkg .shrinkable > .hkkg-t1").click(function(){
+      $(this).parent().toggleClass("shrink");
+    });
+    </script>
+</body>
+
+</html>
