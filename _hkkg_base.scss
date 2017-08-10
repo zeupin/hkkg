@@ -44,6 +44,12 @@
   }
 }
 
+.hkkg-t1 > a,
+.hkkg-t2 > a,
+.hkkg-t3 > a {
+  display: block;
+}
+
 // 收起时显示的下拉箭头
 .hkkg-shrink-arrow {
   border: 0.5rem solid transparent;

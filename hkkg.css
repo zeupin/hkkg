@@ -8,6 +8,8 @@
 
 .hkkg-box2.shrink .hkkg-box3, .hkkg-box2.shrink .hkkg-t3 { display: none; }
 
+.hkkg-t1 > a, .hkkg-t2 > a, .hkkg-t3 > a { display: block; }
+
 .hkkg-shrink-arrow { border: 0.5rem solid transparent; border-top-color: #fff; width: 0; height: 0; content: ""; z-index: 1; position: absolute; top: 1.2rem; right: 0.5rem; }
 
 .hkkg { font-size: 1rem; text-align: center; }
