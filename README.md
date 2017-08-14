@@ -18,4 +18,15 @@
 
     .hkkg-box1.shrink       收起状态的box
     .hkkg-box1.shrinkable   可折叠的box
+
+如果使用了shrink相关的模式，需要在document结尾脚本区加上如下代码：
+
+<script>
+  $(".hkkg .shrinkable > .hkkg-t1").click(function () {
+    $(this).parent().toggleClass("shrink");
+  });
+</script>
+
+方可使shrinkable的box完成状态切换。
 ```
+
